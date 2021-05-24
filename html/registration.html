@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Doto 2</title>
+
+  <!-- Link to my CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/registration.css">
+
+  <!-- Title bar image -->
+  <link rel="icon" href="../assets/logo.png" type="image/x-icon">
+
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <div class="nav">
+    <div class="nav-brand">
+      <a href="index.html" class="logo-doto">
+        <img src="../assets/logo.png" alt="Logo Doto-2">
+        <h1>Doto 2</h1>
+      </a>
+    </div>
+    <ul>
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="heroes.html" class="nav-link">Heroes</a></li>
+      <li><a href="" class="nav-link">Game Mechanics</a></li>
+      <li><a href="" class="nav-link">Merchandises</a></li>
+      <li><a href="registration.html" class="btn">Registration</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- End Navbar -->
+
+  <!-- Form Registration -->
+  <div class="form-box">
+    <h1>Fill This Form</h1>
+    <br>
+    <form action="" class="form-container">
+      <input type="text" id="Username" placeholder="Username" class="form-input">
+      <input type="email" id="Email" placeholder="Email" class="form-input">
+      <input type="password" id="Password" placeholder="Password" class="form-input">
+      <select id="region" class="form-input">
+        <option value="NULL">Region</option>
+        <option value="america">America</option>
+        <option value="asia">Asia</option>
+        <option value="southeastasia">South East Asia</option>
+        <option value="europe">Europe</option>
+        <option value="australia">Australia</option>
+        <option value="africa">Africa</option>
+      </select>
+      <input type="text" placeholder="Date of birth" onfocus="(this.type='date')" class="form-input"> 
+    </form>
+  </div>
+  <!-- End Form Registration -->
+
+  <!-- Footer -->
+			<div class="footer-container">
+				
+				<div class="connect">
+					<h2>Connect With Us</h2>
+					<div class="socials">
+						<div class="col1">
+							<a href="https://www.facebook.com/" target="_blank">
+								<img src="../assets/facebook-logo.png" alt="facebook" class="social-logo">
+							</a>
+							<a href="https://www.instagram.com/" target="_blank">
+								<img src="../assets/instagram-logo.png" alt="instagram" class="social-logo">
+							</a>
+							<a href="https://www.youtube.com/" target="_blank">
+								<img src="../assets/youtube-logo.png" alt="youtube" class="social-logo">
+							</a>
+						</div>
+						<div class="col2">
+							<a href="https://www.discord.com/" target="_blank">
+								<img src="../assets/discord.jpg" alt="discord" class="social-logo">
+							</a>
+							<a href="https://www.twitter.com/" target="_blank">
+								<img src="../assets/twitter.png" alt="twitter" class="social-logo">
+							</a>
+							<a href="https://www.twitch.tv/" target="_blank">
+								<img src="../assets/twitch.png" alt="twitch" class="social-logo">
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<div class="logo">
+						<img src="../assets/bluejack-logo.png" alt="Bluejack" class="logo-bj  ">
+						<div class="logo-doto">
+							<img src="../assets/logo.png" alt="Logo Doto-2">
+							<h1>DOTO 2</h1>
+						</div>
+					</div>
+					<div class="footer-content">
+						Doto and the Doto logo are trademarks and/or registered trademarks of Bluejack Corporation. 2021 Bluejack Corporation, all rights reserved.
+					</div>
+				</div>
+
+        <div class="contact-us">
+          <h2>Contact Us</h2>
+          <form action="" id="form-msg">
+            <input type="email" placeholder="Your Email Address" class="form" id="email">
+            <textarea name="Message" id="message" cols="30" rows="3" placeholder="Message..." class="form"></textarea>
+          </form>
+          <button class="btn send-btn" onclick="registAccount()"><img src="../assets/send.png" alt="send" class="send-logo">Send</button>
+        </div>
+			</div>
+	<!-- End Footer -->
+
+</body>
+<!-- Link to JavaScript -->
+<script src="../js/script.js"></script>
+</html>

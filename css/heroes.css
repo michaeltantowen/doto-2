@@ -1,0 +1,139 @@
+body {
+  background-image: linear-gradient(to right, rgba(120,134,146,1), rgba(25,30,36,1));
+}
+
+/* Hero Type */
+.choose-type {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.strength-type h1:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #fb4a00;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-top: -10px;
+}
+
+.agility-type h1:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #17c528;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-top: -10px;
+}
+
+.intelligence-type h1:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #00aab9;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-top: -10px;
+}
+
+.active-strength h1:hover::after, .active-agility h1:hover::after, .active-intelligence h1:hover::after {
+  content: '';
+  display: block;
+  border-bottom: none !important;
+}
+
+.active-strength {
+  border-bottom: 5px solid #fb4a00;
+}
+
+.active-agility {
+  border-bottom: 5px solid #17c528;
+}
+
+.active-intelligence {
+  border-bottom: 5px solid #00aab9;
+}
+
+.hero-type {
+  display: flex;
+  font-family: Trajan;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #000;
+  text-decoration: none;
+}
+
+.hero-type img {
+  height: 40px;
+  width: 40px;
+}
+/* End Hero Type */
+
+/* Hero Library */
+.gallery-container {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Hero Library */
+.hero-card {
+  margin-top: 30px;
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+}
+
+.hero-card:hover {
+  box-shadow: rgba(255, 255, 255, 0.24) 5px 5px 5px;
+  transform: scale(1.10);
+  z-index: 2;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-name {
+  font-family: Trajan;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-card:hover .hero-name {
+  opacity: 1;
+}
+/* End Hero Library */
+
+@media screen and (max-width: 800px) {
+  .choose-type {
+    flex-direction: column;
+  }
+  .hero-type {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,3 @@
+Strygwyr, the Bloodseeker, is a melee agility hero imbued with dreadful powers to fuel violence and rip enemies apart in the heat of close combat.
+
+He can drive allied targets into a maddened Bloodrage, increasing their attack speed and spell damage at the cost of losing a percentage of their health. He can also cast Bloodrage on himself turning him into a nuker. 
