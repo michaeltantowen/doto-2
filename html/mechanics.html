@@ -4,19 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Doto 2</title>
 
-  <!-- Link to my CSS -->
+  <!-- link to my css -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/registration.css">
+  <link rel="stylesheet" href="../css/mechanics.css">
 
+  <title>Game Mechanics</title>
   <!-- Title bar image -->
   <link rel="icon" href="../assets/logo.png" type="image/x-icon">
-
 </head>
 <body>
-  
   <!-- Navbar -->
   <div class="nav">
     <div class="nav-brand">
@@ -26,9 +23,9 @@
       </a>
     </div>
     <ul>
-      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="index.html" class="nav-link">Home</a></li>
       <li><a href="heroes.html" class="nav-link">Heroes</a></li>
-      <li><a href="mechanics.html" class="nav-link">Game Mechanics</a></li>
+      <li><a href="#" class="nav-link active">Game Mechanics</a></li>
       <li><a href="" class="nav-link">Merchandises</a></li>
       <li><a href="registration.html" class="btn">Registration</a></li>
     </ul>
@@ -41,27 +38,40 @@
   </div>
   <!-- End Navbar -->
 
-  <!-- Form Registration -->
-  <div class="form-box">
-    <h1>Fill This Form</h1>
-    <br>
-    <form action="" class="form-container">
-      <input type="text" id="Username" placeholder="Username" class="form-input">
-      <input type="email" id="Email" placeholder="Email" class="form-input">
-      <input type="password" id="Password" placeholder="Password" class="form-input">
-      <select id="region" class="form-input">
-        <option value="NULL">Region</option>
-        <option value="america">America</option>
-        <option value="asia">Asia</option>
-        <option value="southeastasia">South East Asia</option>
-        <option value="europe">Europe</option>
-        <option value="australia">Australia</option>
-        <option value="africa">Africa</option>
-      </select>
-      <input type="text" placeholder="Date of birth" onfocus="(this.type='date')" class="form-input"> 
-    </form>
+  <div class="content">
+    <ul class="left-sidebar">
+      <li><a href="#about-game">About Game</a></li>
+      <li><a href="">Abilities</a></li>
+      <li><a href="">Unit Types</a></li>
+      <li><a href="">Buildings</a></li>
+      <li><a href="">Attack Mechanics</a></li>
+      <li><a href="">Status Effect</a></li>
+      <li><a href="">Item</a></li>
+      <li><a href="">Roles</a></li>
+      <li><a href="">Gold System</a></li>
+      <li><a href="">Game Mode</a></li>
+    </ul>
+    <div class="right-bar">
+      <div class="sub">
+        <img src="../assets/logo.png" alt="Logo Doto-2" id="sub-img">
+      </div>
+      <div class="sub about-game">
+        <h1 class="sub-title">ABOUT GAME</h1>
+        <p class="sub-desc">
+          Doto 2 is a multiplayer online battle arena (MOBA) video game in which two teams of five players compete tcollectively destroy a large structure defended by the opposing team known as the "Ancient", whilst defendintheir own. As in Defense of the Ancients, the game is controlled using standard real-time strategy controls, anis presented on a single map in a three-dimensional isometric perspective. Ten players each control one of thgame's 121 playable characters, known as "heroes", with each having their own design, strengths, and weaknesseHeroes are divided into 5 primary roles, known as the mid laner, safe laner, off laner, soft support and harsupport.
+        </p>
+      </div>
+      <div class="sub abilities">
+        <h1 class="sub-title">Abilities</h1>
+        <p class="sub-desc">
+          Abilities are unique skills that heroes and creeps have access to on the battlefield. They range from simple passive effects, to devastating explosions of energy, to complex, terrain changing feats. All heroes have four or more abilities, three or more basic abilities and an ultimate ability, that they can assign ability points to every time they level up. Every level in an ability makes it more powerful, sometimes increasing its mana cost as well.
+          <br><br>
+          Abilities can consume mana, and may also be placed on cooldown when used. Abilities that are on cooldown cannot be used until their cooldown timer is up, at which point they can be cast again. Abilities with low cooldowns are sometimes referred to as "spammable" abilities, because they can be used very frequently.
+        </p>
+      </div>
+    </div>
   </div>
-  <!-- End Form Registration -->
+  
 
   <!-- Footer -->
 			<div class="footer-container">
@@ -113,7 +123,7 @@
             <input type="email" placeholder="Your Email Address" class="form" id="email">
             <textarea name="Message" id="message" cols="30" rows="3" placeholder="Message..." class="form"></textarea>
           </form>
-          <button class="btn send-btn" onclick="registAccount()"><img src="../assets/send.png" alt="send" class="send-logo">Send</button>
+          <button class="btn send-btn" onclick="sendmsg()"><img src="../assets/send.png" alt="send" class="send-logo">Send</button>
         </div>
 			</div>
 	<!-- End Footer -->
