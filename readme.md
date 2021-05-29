@@ -9,3 +9,4 @@ By:
 - Michael Tantowen
 - Tristan
 - Daniel Justine
+- newmember
