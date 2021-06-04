@@ -96,3 +96,12 @@
 .cate-part {
   display: none;
 }
+
+@media screen and (max-width: 800px) {
+  .category {
+    flex-direction: column;
+  }
+  .cate-type {
+    margin-bottom: 25px;
+  }
+}
