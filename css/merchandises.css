@@ -1,0 +1,98 @@
+.store-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.category {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cate-type{
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cate-type img {
+  width: 200px;
+  height: 250px;
+  display: block;
+}
+
+.cate-name {
+  font-family: Trajan;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cate-type:hover .cate-name {
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.5;
+}
+
+.cate-type:hover {
+  transform: scale(1.05);
+}
+
+/* merchan */
+.merchan {
+  margin-bottom: 25px;
+}
+
+.cate-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+
+.merchan-btn {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #000;
+  font-family: Trajan;
+  color: #fff;
+}
+
+.merchan-btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.merchan-card {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  background-color: gray;
+  font-family: Trajan;
+}
+
+.merchan-card img {
+  width: 250px;
+  height: 300px;
+}
+
+.cate-part {
+  display: none;
+}
