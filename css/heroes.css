@@ -2,89 +2,48 @@ body {
   background-image: linear-gradient(to right, rgba(120,134,146,1), rgba(25,30,36,1));
 }
 
-/* Hero Type */
-.choose-type {
-  width: 80%;
+.hero-category {
+  width: 60%;
   margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-direction: row;
 }
 
-.strength-type h1:hover::after {
-  content: '';
-  display: block;
-  border-bottom: 5px solid #fb4a00;
-  width: 50%;
+.hero-container {
+  width: 80%;
   margin: auto;
-  padding-bottom: 5px;
-  margin-top: -10px;
+  margin-bottom: 50px;
 }
 
-.agility-type h1:hover::after {
-  content: '';
-  display: block;
-  border-bottom: 5px solid #17c528;
-  width: 50%;
-  margin: auto;
-  padding-bottom: 5px;
-  margin-top: -10px;
-}
-
-.intelligence-type h1:hover::after {
-  content: '';
-  display: block;
-  border-bottom: 5px solid #00aab9;
-  width: 50%;
-  margin: auto;
-  padding-bottom: 5px;
-  margin-top: -10px;
-}
-
-.active-strength h1:hover::after, .active-agility h1:hover::after, .active-intelligence h1:hover::after {
-  content: '';
-  display: block;
-  border-bottom: none !important;
-}
-
-.active-strength {
-  border-bottom: 5px solid #fb4a00;
-}
-
-.active-agility {
-  border-bottom: 5px solid #17c528;
-}
-
-.active-intelligence {
-  border-bottom: 5px solid #00aab9;
+.type {
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: none;
 }
 
 .hero-type {
+  background-color: transparent;
+  border: none;
+  width: 30%;
   display: flex;
-  font-family: Trajan;
-  color: white;
-  align-items: center;
   justify-content: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px #000;
-  text-decoration: none;
+  font-family: Trajan;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 25px;
 }
 
 .hero-type img {
-  height: 40px;
   width: 40px;
+  height: 40px;
+  margin-right: 15px;
 }
-/* End Hero Type */
 
-/* Hero Library */
-.gallery-container {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.hero-type:hover, .hero-type.active {
+  text-decoration: underline;
+  color: #000;
+  
 }
 
 /* Hero Library */
