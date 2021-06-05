@@ -35,12 +35,12 @@ body {
   text-decoration: none;
 }
 
-.left-bar a.active {
+.left-bar a.on {
   background-color: #04aa6d;
   color: white;
 }
 
-.left-bar a:hover:not(.active) {
+.left-bar a:hover:not(.on) {
   background-color: #555;
   color: white;
 }
@@ -87,7 +87,7 @@ li.sub-desc {
   transition: 0.4s;
 }
 
-.active,
+.on,
 .accordion:hover {
   background-color: #ccc;
 }
@@ -100,7 +100,7 @@ li.sub-desc {
   margin-left: 5px;
 }
 
-.active:after {
+.on:after {
   content: "\2212";
 }
 
