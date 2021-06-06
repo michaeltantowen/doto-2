@@ -131,3 +131,19 @@ li.sub-desc {
   width: 500px;
   height: 500px;
 }
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: 90%;
+  }
+  .left-bar {
+    height: 100%;
+  }
+  .left-bar a {
+    text-align: left;
+  }
+  .left-bar a:hover:not(.on) {
+    color: blue;
+    background-color: transparent;
+  }
+}

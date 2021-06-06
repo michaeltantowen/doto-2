@@ -95,4 +95,12 @@ body {
   .hero-type {
     margin-top: 10px;
   }
+  .hero-category {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-container {
+    width: 100%;
+  }
 }

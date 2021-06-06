@@ -15,6 +15,7 @@
   position: relative;
   background-color: transparent;
   border: none;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -99,9 +100,24 @@
 
 @media screen and (max-width: 800px) {
   .category {
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
   }
   .cate-type {
     margin-bottom: 25px;
+  }
+  .cate-type img {
+    width: 150px;
+    height: 200px;
+  }
+  .cate-name {
+    width: 100%;
+    height: 30%;
+    font-size: small;
+  }
+  .cate-part {
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
   }
 }
