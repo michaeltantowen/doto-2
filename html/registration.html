@@ -46,9 +46,12 @@
     <h1>Fill This Form</h1>
     <br>
     <form action="" class="form-container" id="regist-form">
+      <p id="username-null" class="alert"></p>
       <input type="text" id="Username" placeholder="Username" class="form-input">
+      <p id="email-null" class="alert"></p>
       <input type="text" id="Email" placeholder="Email" class="form-input">
       <input type="password" id="Password" placeholder="Password" class="form-input">
+      <p id="region-null" class="alert"></p>
       <select id="region" class="form-input">
         <option value="NULL">Region</option>
         <option value="america">America</option>
@@ -58,6 +61,7 @@
         <option value="australia">Australia</option>
         <option value="africa">Africa</option>
       </select>
+      <p id="dob-null" class="alert"></p>
       <input type="text" placeholder="Date of birth" onfocus="(this.type='date')" id="dateOfBirth" class="form-input"> 
       <button class="btn regist-btn" onclick="registAccount()">SUBMIT</button>
     </form>

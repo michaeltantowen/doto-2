@@ -85,3 +85,33 @@
 // 		location.reload();
 // 	}
 // }
+
+function registAccount() {
+  var userName = document.getElementById('Username').value;
+  var email = document.getElementById('Email').value;
+  var region = document.getElementById('region').value;
+  var DOB = document.getElementById('dateOfBirth').value;
+
+  if(userName === "") {
+    document.getElementById('username-null').innerHTML = "This must be filled!";
+  } else if(userName.length < 5) {
+    document.getElementById('username-null').innerHTML = "Username must be more than 5 characters!";
+  }
+
+  if(email === "") {
+    document.getElementById('email-null').innerHTML = "This must be filled!";
+  } 
+  if(email.includes('@') || email.includes('.com')) {
+    document.getElementById('email-null').innerHTML = "";
+  } else {
+    document.getElementById('email-null').innerHTML = "Invalid email format!";
+  }
+
+  if(region === "NULL") {
+    document.getElementById('region-null').innerHTML = "Please select your region!";
+  }
+
+  if(DOB === "") {
+    document.getElementById('dob-null').innerHTML = "This must be filled!";
+  }
+}

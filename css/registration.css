@@ -28,6 +28,11 @@
   border: 3px inset #303030;
 }
 
+.alert {
+  font-size: 15px;
+  color: red;
+}
+
 @media screen and (max-width: 800px) {
   .form-box {
     width: 80%;
