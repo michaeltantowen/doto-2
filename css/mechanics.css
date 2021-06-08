@@ -136,7 +136,8 @@ li.sub-desc {
 
 @media screen and (max-width: 800px) {
   .content {
-    width: 90%;
+    width: 100%;
+    height: 90vh;
   }
   .left-bar {
     height: 100%;
