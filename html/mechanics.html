@@ -85,6 +85,7 @@
                     assign ability points to every time they level up. Every level in an ability makes it more powerful,
                     sometimes increasing its mana cost as well.
                     <br><br>
+<<<<<<< HEAD
                     Abilities can consume mana, and may also be placed on cooldown when used. Abilities that are on
                     cooldown
                     cannot be used until their cooldown timer is up, at which point they can be cast again. Abilities
@@ -96,6 +97,41 @@
                 <button class="accordion">Upgrading Abilities</button>
                 <div class="panel">
                     <br>
+=======
+                    Ultimates, unlike normal abilities, are usually able to target a unit under a spell immunity effect,
+                    such as Black King Bar. They will rarely damage such a unit, but other effects such as slows or stun
+                    will usually apply. This makes ultimates, especially those with stun effects, incredibly powerful,
+                    since enemy heroes cannot block the effects.
+                </p>
+            </div>
+            <button class="accordion">Sub-Abilities</button>
+            <div class="panel">
+                <p class="sub-desc">
+                    Many abilities come together with sub-abilities. These extra abilities usually do nothing on their
+                    own and mostly are only active after the spell they come with was cast first, or in some cases, they
+                    serve as a set-up for other spells. Their tasks range from activating the effects of other abilities
+                    on demand, manipulate abilities or even fully cancel them when desired. Usually, these abilities are
+                    innate, or are unlocked after learning specific spells. Since these abilities usually have a very
+                    low or no cooldown at all, they usually do not trigger abilities which react on ability usage, like
+                    Magic Wand's charge gain or Arcane Curse's spell cast penalty.
+                </p>
+            </div>
+            <button class="accordion">Charge-based Abilities</button>
+            <div class="panel">
+                <p class="sub-desc">
+                    Some abilities (basic and ultimate abilities) do not use the cooldown system, but instead have a
+                    number of charges and no cooldown. Each cast of such a spell consumes one of its charges, which then
+                    replenishes over time.
+                </p>
+            </div>
+            <button class="accordion">Ability Types</button>
+            <div class="panel">
+                <p class="sub-desc">
+                    An ability's type refers to how that ability's effects are applied.
+                <ul>
+			<br>
+                    <li class="sub-desc">Active</li>
+>>>>>>> 883b7f7e1c6915c60bfb9a423e8a566d0c0f18ce
                     <p class="sub-desc">
                         Every time a hero levels up, they earn an ability point, until their abilities are fully
                         upgraded.
@@ -124,6 +160,7 @@
                         in Earthshaker's Fissure increases the damage it deals and the duration of its stun, but also
                         increases its mana cost.
                         <br><br>
+<<<<<<< HEAD
                         Besides directly leveling abilities, there are a few other ways to make abilities more powerful.
                         Spell Amplification is a mechanic which increases the amount of damage of abilities slightly.
                         Aghanim's Scepter and Aghanim's Shard are special items which can enhance each hero in a unique
@@ -136,6 +173,35 @@
                         Some heroes also have an ability which improves their other abilities further. For example, Ogre
                         Magi's Multicast makes his other 3 abilities more powerful.
                     </p>
+=======
+                        Active abilities are indicated by a bevel around the icon, which makes them look like a button.
+                        When an ability gets used and enters its cast animation, the bevel turns green and the icon
+                        shifts, looking like a pressed button. When selecting a targeted ability, the icon and the bevel
+                        appear brighter until the ability gets deselected or the cast begins. Active abilities also have
+                        a hotkey displayed at the top left corner.
+                    </p>
+			<br>
+                    <li class="sub-desc">Passive</li>
+                    <p class="sub-desc">
+                        Passive abilities apply their effects either permanently as soon as they are learned, or
+                        activate by themselves if the ability is learned and its requirements met. These requirements
+                        can range from attacking a unit, casting a spell or even getting attacked. Most passive
+                        abilities do not consume mana and usually do not have cooldowns, exceptions include Wraith King
+                        and Reincarnation. Most heroes have at least one passive ability, though not all do.
+                        <br><br>
+                        Passive abilities do not have a bevel and look like they are pressed into the hud. Since passive
+                        abilities cannot be used manually, their appearance never changes. Passive abilities only have
+                        an icon displayed upon learning.
+                    </p class = "sub-desc">
+			<br>
+                    <li class="sub-desc">Autocast</li>
+                    <p class="sub-desc">
+                        Autocast abilities are special active abilities that can be toggled on or off, or manually cast.
+                    <ul>
+                        <li class="sub-desc">Right Click on ability to toggle autocasting on or off.</li>
+                        <li class="sub-desc">Alt + Hotkey is the default hotkey to toggle autocasting on or off.</li>
+                    </ul>
+>>>>>>> 883b7f7e1c6915c60bfb9a423e8a566d0c0f18ce
                     <br>
                 </div>
                 <button class="accordion">Basic Abilities</button>
@@ -148,6 +214,7 @@
                         basic ability level by 1. Ultimate abilities can only be upgraded every 6 levels, starting from
                         level 6. These ultimate abilities are usually more powerful than a hero's basic abilities.
                     </p>
+<<<<<<< HEAD
                     <br>
                 </div>
                 <button class="accordion">Ultimates</button>
@@ -176,6 +243,40 @@
                         will usually apply. This makes ultimates, especially those with stun effects, incredibly
                         powerful,
                         since enemy heroes cannot block the effects.
+=======
+                </ul>
+                </p>
+            </div>
+            <button class="accordion">Targeting Types</button>
+            <div class="panel">
+                <p class="sub-desc">
+                    Active abilities and autocast abilities are targeted in different ways, depending on the effects of
+                    the ability.
+                    <br><br>
+                <ul>
+			<br>
+                    <li class="sub-desc">No Target</li>
+                    <p class="sub-desc">
+                        Abilities with the no target requirement are immediately cast as soon as its button is pressed.
+                        Many of these abilities do not have a cast time. They cannot directly target a unit or a point.
+                        They usually affect the caster, or units around the caster. They can affect an area around the
+                        caster, or have a global effect.
+                    <ul>
+			    <br>
+                        <li class="sub-desc">Toogle</li>
+                        <p class="sub-desc">
+                            Toggle abilities are always non-targetable. These abilities apply a periodic effect and
+                            often drain mana or health as long as they are toggled on. These effects can range from
+                            damaging or healing nearby allies, to switch between attack types, and to manipulate other
+                            abilities of the unit. If the toggle ability drains mana over time, it turns itself off once
+                            not having mana to support it anymore. They cannot be forcibly turned off by anyone but the
+                            player by pressing their button again, or by dying. Like regular spells, they cannot be used
+                            (in this case, turned on or off) while affected by disables which prevent ability usage.
+                            However, once they are toggled on, they persist through any form of disable, including
+                            silence.
+                        </p>
+                    </ul>
+>>>>>>> 883b7f7e1c6915c60bfb9a423e8a566d0c0f18ce
                     </p>
                     <br>
                 </div>
@@ -3180,5 +3281,9 @@
 <!-- Link to JavaScript -->
 <script src="../js/responsive.js"></script>
 <script src="../js/Mechanic.js"></script>
+<<<<<<< HEAD
 
 </html>
+=======
+</html>
+>>>>>>> 883b7f7e1c6915c60bfb9a423e8a566d0c0f18ce
