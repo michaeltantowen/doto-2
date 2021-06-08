@@ -91,6 +91,7 @@ function registAccount() {
   var email = document.getElementById('Email').value;
   var region = document.getElementById('region').value;
   var DOB = document.getElementById('dateOfBirth').value;
+  var pass = document.getElementById('Password').value;
 
   if(userName === "") {
     document.getElementById('username-null').innerHTML = "This must be filled!";
@@ -105,6 +106,10 @@ function registAccount() {
     document.getElementById('email-null').innerHTML = "";
   } else {
     document.getElementById('email-null').innerHTML = "Invalid email format!";
+  } 
+
+  if(pass === "") {
+    document.getElementById('pass-null').innerHTML = "This must be filled!";
   }
 
   if(region === "NULL") {
