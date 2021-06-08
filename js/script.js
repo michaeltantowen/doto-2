@@ -1,22 +1,10 @@
-// Slideshow
-var slideIndex = 0;
-showSlides();
+$("#slider > img:gt(0)").hide();
 
-function showSlides() {
-	var slides = document.getElementsByClassName("slide-img");
-	var indicator = document.getElementsByClassName("indicator");
-	for (var i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	slideIndex++;
-	if (slideIndex > slides.length) {
-		slideIndex = 1;
-	}
-	for (var i = 0; i < indicator.length; i++) {
-		indicator[i].className = indicator[i].className.replace("active", "");
-	}
-	slides[slideIndex - 1].style.display = "block";
-	indicator[slideIndex - 1].className += " active-indicator";
-	setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-// End Slideshow
+setInterval(function () {
+	$("#slider > img:first")
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo("#slider");
+}, 3000);

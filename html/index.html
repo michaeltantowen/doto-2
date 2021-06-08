@@ -12,7 +12,7 @@
 
   <!-- Title bar image -->
   <link rel="icon" href="../assets/logo.png" type="image/x-icon">
-
+  <script src="../js/JQuery.js"></script>
 </head>
 <body>
   
@@ -40,22 +40,10 @@
   <!-- End Navbar -->
 
   <!-- Start SlideShow -->
-  <div class="slide-container">
-    <div class="slide-img fade">
-      <img src="../assets/slide-1.jpg" alt="Slide-1">
-    </div>
-    <div class="slide-img fade">
-      <img src="../assets/slide-2.jpg" alt="Slide-2">
-    </div>
-    <div class="slide-img fade">
-      <img src="../assets/slide-3.jpg" alt="Slide-3">
-    </div>
-  </div>
-  <br>
-  <div class="indicator-container">
-    <span class="indicator" onclick="moveTo(1)"></span>
-    <span class="indicator" onclick="moveTo(2)"></span>
-    <span class="indicator" onclick="moveTo(3)"></span>
+  <div id="slider">
+    <img src="../assets/slide-1.jpg" alt="slide-1">
+    <img src="../assets/slide-2.jpg" alt="slide-2">
+    <img src="../assets/slide-3.jpg" alt="slide-3">
   </div>
   <!-- End Slideshow -->
 
@@ -135,5 +123,4 @@
 <!-- Link to JavaScript -->
 <script src="../js/script.js"></script>
 <script src="../js/responsive.js"></script>
-<script src="../js/JQuery.js"></script>
 </html>

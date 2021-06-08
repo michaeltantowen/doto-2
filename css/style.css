@@ -129,54 +129,18 @@ body {
 /* End Navbar */
 
 /* Slideshow */
-.slide-container {
+#slider {
+  position: relative;
   width: 60%;
   height: 500px;
   margin: auto;
-  border: 3px solid #000;
+  border: 1px solid #000;
 }
 
-.slide-img img {
-  width: 100%;
-}
-
-.slide-img {
-  display: none;
-}
-
-.indicator-container {
-  text-align: center;
-}
-
-.indicator {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.indicator:hover, .active-indicator {
-  background-color: #000;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+#slider img {
+  position: absolute;
+  width: 60vw;
+  height: 500px;
 }
 /* End Slideshow */
 
