@@ -1,4 +1,6 @@
-Repository to keep our project file's
+Create an design for Dota-2 website with our version.
+Human and Computer Interraction Final Project's
+Binusian2024, Computer Science
 
 Resources:
 - w3schools.com
