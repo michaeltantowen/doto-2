@@ -132,15 +132,15 @@ body {
 #slider {
   position: relative;
   width: 60%;
-  height: 500px;
+  height: 550px;
   margin: auto;
-  border: 1px solid #000;
+  border: 3px solid #000;
 }
 
 #slider img {
   position: absolute;
   width: 60vw;
-  height: 500px;
+  height: 550px;
 }
 /* End Slideshow */
 
@@ -329,15 +329,12 @@ body {
   }
 
   /* Slideshow */
-  .slide-container {
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 8px;
+  #slider {
+    height: 45vh;
   }
-  .indicator {
-    width: 10px;
-    height: 10px;
+  #slider img {
+    height: 100%;
   }
-
   /* About */
   .about {
     height: 500px;
