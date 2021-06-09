@@ -28,7 +28,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
 
 .skill {
@@ -40,7 +40,7 @@ p {
 }
 
 .hero-img img {
-  width: 500px;
+  width: 700px;
   height: 700px;
 }
 
@@ -84,4 +84,32 @@ p {
   font-size: 15px;
   padding: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    overflow-y: scroll;
+    margin-bottom: 100px;
+  }
+
+  .hero-img img {
+    width: 50vw;
+    height: 65vh;
+  }
+
+  .desc {
+    flex-direction: column-reverse;
+  }
+
+  .hero-desc h1 {
+    text-align: center;
+  }
+  
+  .hero-desc p {
+    text-align: justify;
+  }
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
