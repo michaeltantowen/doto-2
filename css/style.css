@@ -15,7 +15,12 @@
 }
 
 body {
-  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5)), url(../assets/bg.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -74,7 +79,7 @@ body {
 }
 
 .nav ul li {
-  list-style: none;  
+  list-style: none;
 }
 
 .nav ul li a {
@@ -86,7 +91,7 @@ body {
 }
 
 .nav-link:hover::after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: 3px solid #ff1100;
   width: 50%;
@@ -98,7 +103,7 @@ body {
 }
 
 .nav-link.active:hover::after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: none;
 }
@@ -152,8 +157,13 @@ body {
 }
 
 .about:hover {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/about-bg.gif);
-  transition: all .3s;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../assets/about-bg.gif);
+  transition: all 0.3s;
   background-position: top;
   background-size: cover;
   background-attachment: fixed;
@@ -203,6 +213,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  bottom: 0;
 }
 
 .connect {
@@ -222,7 +233,8 @@ body {
   justify-content: space-between;
 }
 
-.col1, .col2 {
+.col1,
+.col2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -315,7 +327,11 @@ body {
     right: 0;
     top: 0;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgb(104, 104, 104, 0.8), rgb(82, 82, 82));
+    background-image: linear-gradient(
+      to bottom,
+      rgb(104, 104, 104, 0.8),
+      rgb(82, 82, 82)
+    );
     height: 80vh;
     width: 100%;
     justify-content: space-evenly;
@@ -342,7 +358,7 @@ body {
   .about {
     height: 500px;
   }
-  .about:hover  {
+  .about:hover {
     background-image: none;
   }
   .content h1 {
@@ -370,7 +386,8 @@ body {
   .socials {
     flex-direction: column;
   }
-  .col1, .col2 {
+  .col1,
+  .col2 {
     flex-direction: row;
     justify-content: space-between;
     width: 200px;
